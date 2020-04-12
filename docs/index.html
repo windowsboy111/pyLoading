@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <pre class='header'>
+        <h1>pyLoading</h1>
+        <h2>Wanna loading animation?  You've come to the right place.</h2>
+        <h3>windowsboy111</h3>
+    </pre>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="https://github.com/windowsboy111/">Github</a>
+        <a href="#otherProj">My other projects</a>
+        <a href="https://www.youtube.com/channel/UCBStWQn6EiCHxRWV5MenFYw">Youtube</a>
+        <a href="#socMedia">Social Media</a>
+    </div>
+    <!-- Page content -->
+    <div class="main">
+        <body>
+
+            <a href="https://github.com/windowsboy111/pyLoading">See the repo on github</a>
+            <p class='refwarn'>Editing or using the code is permitted as long as there's a reference to this repo (such as a link).</p>
+            <p class='refwarn'>Ignore this if you are the only one to use that library inside your code and no one is going to view your code.</p>
+            <h3>Usage:</h3>
+            <p>Check the example in example.py</p>
+            <div class='codePar'><code class='prettyprint'>from loading import classicLoading
+from time import sleep
+from consolemod import style
+l = classicLoading(style.green('loading... '),'#',' ',100)
+l.update(0.01)
+print(end=style.green('1%'),flush=True)
+sleep(1)
+l.update(0.15435) # percentage
+print(end=style.green('15%'),flush=True)
+sleep(1)
+l.update(0.5)
+print(end=style.green('50%'),flush=True)
+sleep(1)
+l.update(1.0)
+print(end=style.green('100%'),flush=True)
+print(style.reset(),flush=True)
+sleep(1)
+from loading import fullLineLoading
+l = fullLineLoading('loading... ','rhs',style.blue(),style.bluebg())
+l.update(0.01)
+sleep(1)
+l.update(0.15435) # percentage
+sleep(1)
+l.update(0.5)
+sleep(1)
+l.update(1.0)
+print(style.reset(),flush=True)
+sleep(1)</code></div>
+            <br>
+            <h3 id='otherProj'>My Other Projects</h3>
+            <button onclick='gotopytablemaker()'>pyTableMaker</button>
+            <button onclick='gotogitkccs()'>KCCS Official bot</button>
+            <button onclick='gotokccsofficial()'>KCCS Official Webpage</button>
+            <h3 id='socMedia'>Social Media</h3>
+            <a class='icon', href='https://twitter.com/windowsboy111/'><img id='twitter', class='icon'></a>
+            <a class='icon', href='https://instagram.com/windowsboy111/'><img id='instagram', class='icon'></a>
+        </body>
+    </div>
+    <link rel="stylesheet" type="text/css" href="web.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src='./web.js'></script>
+</html>

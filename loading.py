@@ -52,7 +52,6 @@ class fullLineLoading(classicLoading):
         for i in range(nonspace):
             self.result += ' '
         self.result += self.RHStext
-        print(self.result)
         for char in self.result:
             print(self.fg,end=char,flush=True)
     def _update(self,value):
